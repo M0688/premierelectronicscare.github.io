@@ -22,6 +22,26 @@ section {
     text-align: center;
 }
 
+ul {
+    list-style-type: none; /* Removes default bullets */
+    padding: 0;
+    margin: 20px auto;
+    max-width: 600px; /* Limits width of the list */
+    text-align: left; /* Aligns list items to the left */
+}
+
+li {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+strong {
+    color: #0073e6; /* Highlights key text in blue */
+}
+
 footer {
     background-color: #333;
     color: white;
