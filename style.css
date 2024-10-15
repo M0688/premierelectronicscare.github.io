@@ -1,100 +1,78 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #333333;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 /* Header */
 header {
-    background-color: #004a91; /* Dark blue from the logo */
-    color: #ffffff;
+    background-color: #003366;
+    color: white;
     padding: 20px;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
-    font-size: 36px;
 }
 
 header p {
-    margin: 5px 0 20px;
-    font-size: 18px;
-    font-style: italic;
+    font-size: 1.2em;
 }
 
-/* Section Titles */
-section h2 {
-    color: #004a91; /* Dark blue */
-    margin: 20px 0 10px;
-    font-size: 28px;
+/* Navigation */
+nav ul {
+    background-color: #006699;
+    overflow: hidden;
+    color: white;
+    padding: 0;
     text-align: center;
+    margin: 0;
 }
 
-/* Paragraphs and Text */
-section p, section li {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    text-align: center;
+nav ul li {
+    display: inline;
+    padding: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h2 {
+    color: #003366;
+    margin-top: 0;
 }
 
 /* Footer */
 footer {
-    background-color: #004a91;
-    color: #ffffff;
-    padding: 10px;
+    background-color: #003366;
+    color: white;
     text-align: center;
-}
-
-/* Links */
-a {
-    color: #007ac1; /* Lighter blue from the logo */
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Buttons */
-button {
-    background-color: #007ac1; /* Lighter blue */
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #005b91; /* Darker shade on hover */
-}
-
-/* Form Styles */
-form {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border: 1px solid #cccccc;
-    border-radius: 8px;
-}
-
-form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-form input[type="text"], form input[type="email"], form textarea {
-    width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #cccccc;
-    border-radius: 4px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
-form button[type="submit"] {
-    display:
+/* Text Padding */
+section p {
+    padding: 10px;
+}
