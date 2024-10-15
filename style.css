@@ -1,93 +1,64 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #f4f4f4; /* Light background color */
 }
 
-/* Header */
 header {
-    background-color: #003366;
-    color: white;
-    padding: 20px;
+    background-color: #007BFF; /* Header color */
+    color: white; /* Text color for header */
+    padding: 10px 20px;
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
+.container {
+    display: flex; /* Use flexbox for layout */
 }
 
-header p {
-    font-size: 1.2em;
-}
-
-/* Navigation */
-nav ul {
-    background-color: #006699;
-    overflow: hidden;
-    color: white;
-    padding: 0;
-    text-align: center;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline;
+.sidebar {
+    width: 200px; /* Fixed width for sidebar */
+    background-color: #fff; /* Sidebar background color */
     padding: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
+.sidebar ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
 }
 
-/* Sections */
+.sidebar li {
+    margin: 10px 0; /* Spacing between links */
+}
+
+.sidebar a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Default link color */
+    padding: 8px 12px; /* Padding for links */
+    display: block; /* Make links full-width */
+}
+
+.sidebar .active a {
+    background-color: #007BFF; /* Highlight color */
+    color: white; /* Text color for highlighted link */
+    font-weight: bold; /* Optional: make text bold */
+}
+
 section {
+    flex: 1; /* Allow section to take remaining space */
     padding: 20px;
-    margin: 20px auto;
-    max-width: 1200px;
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* Main content background color */
+    margin: 15px; /* Margin around the content */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
 }
 
-/* Section Box Styles */
-#what-we-do,
-#environment,
-#customer-satisfaction {
-    margin-bottom: 30px;
-    padding: 20px;
-    background-color: #e6f2ff;
-    border-radius: 8px;
-    border: 2px solid #003366;
-}
-
-/* Headings */
-h2 {
-    color: #003366;
-    margin-top: 0;
-}
-
-/* Footer */
 footer {
-    background-color: #003366;
-    color: white;
     text-align: center;
     padding: 10px;
-    margin-top: 30px;
-    position: relative; /* Allow footer to be pushed down by content */
-}
-
-/* Padding at the bottom to create space */
-body {
-    padding-bottom: 50px; /* This gives breathing room at the bottom of the page */
-}
-
-/* Extra space between the last section and the footer */
-#customer-satisfaction {
-    margin-bottom: 50px; /* Ensures last section does not crowd the footer */
+    background-color: #007BFF; /* Footer color */
+    color: white; /* Text color for footer */
+    position: relative; /* Position for footer */
+    bottom: 0;
+    width: 100%; /* Full width */
 }
