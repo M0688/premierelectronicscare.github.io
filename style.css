@@ -3,11 +3,11 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0; /* Light grey background */
+    background-color: #e6f0ff; /* Light blue background */
 }
 
 header {
-    background: #0056b3; /* Dark blue for header */
+    background: #003366; /* Deep blue for header */
     color: #ffffff; /* White text for contrast */
     padding: 1rem 0;
     text-align: center;
@@ -27,7 +27,7 @@ section {
 }
 
 h2 {
-    color: #0056b3; /* Dark blue for headings */
+    color: #0056b3; /* Medium blue for headings */
 }
 
 ul, p {
@@ -37,7 +37,7 @@ ul, p {
 blockquote {
     font-style: italic;
     color: #666; /* Medium grey for blockquote */
-    border-left: 5px solid #0056b3; /* Dark blue for border */
+    border-left: 5px solid #0056b3; /* Medium blue for border */
     padding-left: 10px;
     margin: 10px 0;
 }
@@ -54,31 +54,4 @@ form label {
 
 form input, form textarea {
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-bottom: 15px;
-}
-
-button {
-    background-color: #0056b3; /* Dark blue for button */
-    color: #ffffff; /* White text for button */
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #004494; /* Slightly darker blue on hover */
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #0056b3; /* Dark blue for footer */
-    color: #ffffff; /* White text for footer */
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
+    border: 1px solid #ccc
