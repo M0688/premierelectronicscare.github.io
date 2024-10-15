@@ -4,108 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Premier Electronics Care</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Favicon -->
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.png" type="image/png">
-    <style>
-        /* Sidebar styles */
-        .sidebar {
-            width: 200px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 100%;
-            background-color: #333;
-            padding-top: 20px;
-        }
-
-        .sidebar a {
-            padding: 10px 15px;
-            text-decoration: none;
-            font-size: 18px;
-            color: white;
-            display: block;
-        }
-
-        .sidebar a:hover {
-            background-color: #575757;
-        }
-
-        /* Main content styles */
-        .main-content {
-            margin-left: 220px; /* Same as the width of the sidebar */
-            padding: 20px;
-        }
-
-        /* Logo in header */
-        .logo {
-            max-width: 200px; /* Adjust as needed */
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
-
-        header h1 {
-            text-align: center;
-            margin-top: 10px;
-        }
-
-        /* Box styles for sections */
-        .section-box {
-            border: 1px solid #999;
-            padding: 20px;
-            margin: 20px 0;
-            background-color: #e6f2ff;
-            border-radius: 5px;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 20px;
-        }
-    </style>
 </head>
 <body>
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-    </div>
+    <header>
+        <h1>Premier Electronics Care</h1>
+        <p>Dependable Solutions for Efficient Repairs</p>
+        <img src="Premier_Electronics_Care_Logo.jpeg" alt="Company Logo">
+    </header>
 
-    <!-- Main Content -->
-    <div class="main-content">
-        <header>
-            <!-- Logo -->
-            <img src="Premier_Electronics_Care_Logo.jpeg" alt="Premier Electronics Care Logo" class="logo">
-            <h1>Premier Electronics Care</h1>
-            <p style="text-align:center;">Dependable Solutions for Efficient Repairs</p>
-        </header>
+    <nav id="sidebar">
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
 
-        <!-- What We Do Section -->
-        <section class="section-box">
+    <main>
+        <section class="box">
             <h2>What We Do</h2>
-            <p>We specialize in repairing circuit boards for a wide range of electronics. Our expert team focuses on quality repairs that save customers from costly replacements. We handle laptops, gaming consoles, and more. Premier Electronics Care aims to promote sustainability through reusing and recycling electronics, reducing e-waste, and extending the life of your devices.</p>
+            <p>At Premier Electronics Care, we specialize in circuit board repairs, ensuring your devices get the best care possible. Our skilled technicians are dedicated to providing efficient and effective solutions to keep your electronics running smoothly.</p>
         </section>
 
-        <!-- Environment and Sustainability Section -->
-        <section class="section-box">
-            <h2>Environment and Sustainability</h2>
-            <p>At Premier Electronics Care, we take pride in our environmentally friendly approach. Repairing instead of replacing reduces electronic waste, contributing to a more sustainable planet. We believe in giving electronics a second life, promoting the reuse of devices and components.</p>
+        <section class="box">
+            <h2>Environment and Recycling</h2>
+            <p>We are committed to reducing electronic waste by promoting the repair and reuse of electronics. By choosing our services, you're making a positive impact on the environment.</p>
         </section>
 
-        <!-- Customer Satisfaction Section -->
-        <section class="section-box">
+        <section class="box">
             <h2>Customer Satisfaction</h2>
-            <p>Customer satisfaction is our top priority. Our experienced technicians work diligently to ensure every repair meets the highest quality standards. We offer personalized solutions and guarantee excellent service that keeps our customers coming back.</p>
+            <p>Your satisfaction is our top priority. We strive to provide the best service possible, ensuring you have a seamless experience from start to finish.</p>
         </section>
+    </main>
 
-        <!-- Footer -->
-        <footer>
-            <p>&copy; 2024 Premier Electronics Care. All rights reserved.</p>
-        </footer>
-    </div>
+    <footer>
+        <p>&copy; 2024 Premier Electronics Care. All rights reserved.</p>
+    </footer>
 </body>
 </html>
