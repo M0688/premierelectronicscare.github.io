@@ -1,64 +1,61 @@
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Light background color */
+    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #007BFF; /* Header color */
-    color: white; /* Text color for header */
-    padding: 10px 20px;
+    background: #3a9bdc; /* Blue color from the logo */
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
 }
 
-.container {
-    display: flex; /* Use flexbox for layout */
+nav {
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.sidebar {
-    width: 200px; /* Fixed width for sidebar */
-    background-color: #fff; /* Sidebar background color */
-    padding: 15px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+nav h2 {
+    color: #333;
 }
 
-.sidebar ul {
-    list-style-type: none; /* Remove bullet points */
+nav ul {
+    list-style: none;
     padding: 0;
 }
 
-.sidebar li {
-    margin: 10px 0; /* Spacing between links */
+nav ul li {
+    margin: 10px 0;
 }
 
-.sidebar a {
-    text-decoration: none; /* Remove underline */
-    color: black; /* Default link color */
-    padding: 8px 12px; /* Padding for links */
-    display: block; /* Make links full-width */
+nav ul li a {
+    text-decoration: none;
+    color: #333;
 }
 
-.sidebar .active a {
-    background-color: #007BFF; /* Highlight color */
-    color: white; /* Text color for highlighted link */
-    font-weight: bold; /* Optional: make text bold */
+nav ul li a.active {
+    color: #3a9bdc; /* Highlight active page */
 }
 
-section {
-    flex: 1; /* Allow section to take remaining space */
+main {
     padding: 20px;
-    background-color: #ffffff; /* Main content background color */
-    margin: 15px; /* Margin around the content */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+.box {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #007BFF; /* Footer color */
-    color: white; /* Text color for footer */
-    position: relative; /* Position for footer */
-    bottom: 0;
-    width: 100%; /* Full width */
+    padding: 10px 0;
+    background: #3a9bdc; /* Blue color from the logo */
+    color: #fff;
 }
