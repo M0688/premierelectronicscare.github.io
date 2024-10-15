@@ -1,61 +1,63 @@
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
 
 header {
-    background: #3a9bdc; /* Blue color from the logo */
-    color: #fff;
-    padding: 20px 0;
+    background-color: #007bff; /* Blue color from the logo */
+    color: white;
+    padding: 20px;
     text-align: center;
 }
 
-nav {
-    background: #ffffff;
-    padding: 20px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+.logo {
+    width: 100px; /* Adjust the size of the logo */
 }
 
-nav h2 {
-    color: #333;
+.sidebar {
+    background-color: #343a40; /* Dark gray sidebar */
+    color: white;
+    padding: 15px;
+    float: left;
+    width: 20%;
+    height: 100vh; /* Full height */
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+.sidebar h2 {
+    margin-top: 0;
 }
 
-nav ul li {
-    margin: 10px 0;
-}
-
-nav ul li a {
+.sidebar a {
+    color: white;
     text-decoration: none;
-    color: #333;
 }
 
-nav ul li a.active {
-    color: #3a9bdc; /* Highlight active page */
+.sidebar a:hover,
+.sidebar a.active {
+    background-color: #007bff; /* Highlight color */
+    padding: 10px;
 }
 
 main {
+    margin-left: 25%; /* Leave space for the sidebar */
     padding: 20px;
 }
 
 .box {
-    background: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
+    background-color: white;
     border: 1px solid #ddd;
     border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 footer {
+    background-color: #343a40; /* Dark gray footer */
+    color: white;
     text-align: center;
-    padding: 10px 0;
-    background: #3a9bdc; /* Blue color from the logo */
-    color: #fff;
+    padding: 10px;
+    position: relative;
+    clear: both; /* Ensure footer clears the sidebar */
 }
