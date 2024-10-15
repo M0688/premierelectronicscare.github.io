@@ -1,63 +1,83 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
 }
 
-header {
-    background-color: #007bff; /* Blue color from the logo */
-    color: white;
-    padding: 20px;
-    text-align: center;
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
-.logo {
-    width: 100px; /* Adjust the size of the logo */
+.container {
+    display: flex;
+    min-height: 100vh;
 }
 
 .sidebar {
-    background-color: #343a40; /* Dark gray sidebar */
-    color: white;
-    padding: 15px;
-    float: left;
     width: 20%;
-    height: 100vh; /* Full height */
+    background-color: #004080; /* Blue color from your logo */
+    padding: 20px;
 }
 
-.sidebar h2 {
-    margin-top: 0;
+.sidebar ul {
+    list-style-type: none;
 }
 
-.sidebar a {
-    color: white;
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
     text-decoration: none;
-}
-
-.sidebar a:hover,
-.sidebar a.active {
-    background-color: #007bff; /* Highlight color */
+    color: white;
+    display: block;
     padding: 10px;
-}
-
-main {
-    margin-left: 25%; /* Leave space for the sidebar */
-    padding: 20px;
-}
-
-.box {
-    background-color: white;
-    border: 1px solid #ddd;
+    background-color: #0066cc; /* Slightly lighter blue */
     border-radius: 5px;
+    text-align: center;
+}
+
+.sidebar ul li a.active, .sidebar ul li a:hover {
+    background-color: #003366; /* Darker blue on hover and active */
+}
+
+.main-content {
+    width: 80%;
     padding: 20px;
+}
+
+header {
+    text-align: center;
     margin-bottom: 20px;
 }
 
+header h1 {
+    color: #004080;
+}
+
+header p {
+    color: #0066cc;
+}
+
+header img {
+    max-width: 150px;
+    margin-top: 20px;
+}
+
+.box {
+    border: 1px solid #004080;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
 footer {
-    background-color: #343a40; /* Dark gray footer */
+    background-color: #004080;
     color: white;
     text-align: center;
-    padding: 10px;
-    position: relative;
-    clear: both; /* Ensure footer clears the sidebar */
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
