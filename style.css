@@ -55,6 +55,17 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Section Box Styles */
+#what-we-do,
+#environment,
+#customer-satisfaction {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #e6f2ff; /* Light blue background for section boxes */
+    border-radius: 8px;
+    border: 2px solid #003366; /* Dark blue border to match logo colors */
+}
+
 /* Headings */
 h2 {
     color: #003366;
